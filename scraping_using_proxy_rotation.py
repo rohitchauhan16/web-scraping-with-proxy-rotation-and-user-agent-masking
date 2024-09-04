@@ -184,5 +184,5 @@ ws['Remarks'] = ws['Remarks'].apply(lambda x: ' '.join(x.split()).strip() if x e
 ws['Details'] = ws['Details'].apply(lambda x: x.replace('\n', ',') if x else x) 
 
 
-ws.to_excel('proxy_scrap.xlsx', index=False) 
+ws.to_csv('proxy_scrap.csv', index=False)  
 ws
